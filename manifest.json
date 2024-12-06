@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Productivity Booster",
+    "version": "1.0",
+    "description": "A Chrome extension to enhance productivity with task tracking, focus timers, and website blocking.",
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "alarms",
+        "declarativeNetRequest"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "blocklist",
+                "enabled": true,
+                "path": "blocklist.json"
+            }
+        ]
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}

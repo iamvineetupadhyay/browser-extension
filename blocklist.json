@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://www.pornhub.org/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://josporn.club/videos/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://www.xvideos.com/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+]
